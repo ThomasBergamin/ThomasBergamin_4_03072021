@@ -618,10 +618,6 @@
           overflow-x: hidden;
           position: relative;
         }
-        .bloc {
-          padding-left: constant(safe-area-inset-left);
-          padding-right: constant(safe-area-inset-right);
-        }
       }
       @media (max-width: 767px) {
         .page-container {
@@ -710,8 +706,13 @@
       media="print"
       onload="this.media='all'"
     />
-    <link rel="preload" type="text/css" href="./css/font-awesome.css" />
-    <link rel="preload" type="text/css" href="./css/et-line.css" />
+    <link
+      rel="preload"
+      as="style"
+      type="text/css"
+      href="./css/font-awesome.css"
+    />
+    <link rel="preload" as="style" type="text/css" href="./css/et-line.css" />
 
     <script src="./js/jquery-2.1.0.js" async=""></script>
     <script src="./js/bootstrap.js" async=""></script>
